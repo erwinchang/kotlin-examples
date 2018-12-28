@@ -24,8 +24,8 @@ println("summary: $x + y + z")
 println("summary: ${x + y + z}"
 ```
 
-./gradlew build
-./gradlew run
+./gradlew build  
+./gradlew run  
 ```
 > Task :run
 X: 3, Y: 5, Z: 7
