@@ -11,5 +11,12 @@ class App {
 }
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+    val x = 3
+    val y = 5
+    val z = 7
+
+    var s = "X: $x, Y: $y, Z: $z"
+    println(s)
+    println("summary: $x + y + z")
+    println("summary: ${x + y +z}")
 }

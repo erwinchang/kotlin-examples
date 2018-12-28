@@ -1,26 +1,37 @@
 
 ### hello-world
 
-gradle init
+來源：[Kotlin Tutorial（2）10分鐘認識Kotlin][1]
+
+### 字串
+
+字串裡面需要替換內容方式如下：
+
+
 ```
-hello-world$ gradle init
-
-Select type of project to generate:
-  1: basic
-  2: groovy-application
-  3: groovy-library
-  4: java-application
-  5: java-library
-  6: kotlin-application
-  7: kotlin-library
-  8: scala-library
-Enter selection (default: basic) [1..8] 6
-
-Select build script DSL:
-  1: groovy
-  2: kotlin
-Enter selection (default: kotlin) [1..2] 1
-
-Project name (default: hello-world):
-Source package (default: hello.world):
+"..$變數.."
 ```
+
+```
+"...${運算式}.."
+```
+
+example
+
+```
+val s = "X: $x, Y: $y, Z: $z"
+println("summary: $x + y + z")
+println("summary: ${x + y + z}"
+```
+
+./gradlew build
+./gradlew run
+```
+> Task :run
+X: 3, Y: 5, Z: 7
+summary: 3 + y + z
+summary: 15
+```
+
+
+[1]:http://www.codedata.com.tw/kotlin/kt02/
